@@ -1,0 +1,24 @@
+.button {
+  margin-right: 8px !important;
+  height: 31px;
+  &:nth-of-type(1) {
+    margin-left: auto;
+  }
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-left: auto;
+  & > button:nth-of-type(1) {
+    margin-right: 10px;
+  }
+}
+
+.popover {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  & > span {
+    font-size: 14px;
+  }
+}

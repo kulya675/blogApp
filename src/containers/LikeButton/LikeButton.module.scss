@@ -1,0 +1,15 @@
+.like {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: default;
+}
+
+.loggedIn {
+  cursor: pointer;
+}
+
+.likeCounter {
+  margin-left: 4px;
+  font-size: 12px;
+}
