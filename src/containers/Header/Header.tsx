@@ -12,8 +12,6 @@ import { userSelector } from '../../redux/selectors';
 import { logOut } from '../../redux/actions/userActions';
 import { getCurrentUser } from '../../redux/thunkActions/userThunkAction';
 
-import type { RootStateType } from '../../redux/rootReducer';
-
 import avatar from './avatar.svg';
 import styles from './Header.module.scss';
 
@@ -70,7 +68,7 @@ export const Header: React.FC = () => {
         <li className={styles.item}>
           <div onClick={openDropdownHandler}>
             <span className={styles.username}>{user.username}</span>
-            <Avatar className={classes.avatar} src={avatar} alt="avatar" />
+            <Avatar className={classes.avatar} src={!user.avatar ? avatar : user.avatar} alt={user.username} />
           </div>
           <DropdownMenu
             anchorEl={anchorEl}

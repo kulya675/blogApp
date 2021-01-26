@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+
+import { Avatar } from '@material-ui/core';
 import { ArticleButtons } from '../../containers/ArticleButtons/ArticleButtons';
 import { LikeButton } from '../../containers/LikeButton/LikeButton';
 
@@ -37,7 +39,7 @@ export const ArticleHeader: React.FC<ArticleHeaderPropsType> = ({
             <span className={styles.username}>{username}</span>
             <span className={styles.date}>{date}</span>
           </div>
-          <img className={styles.avatar} src={image} alt="avatar" />
+          <Avatar className={styles.avatar} src={image} alt={username} />
         </section>
       </header>
       <section className={styles.descriptionSection}>

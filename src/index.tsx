@@ -17,8 +17,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-// TODO: . Обработка ошибок, только правильно чтоб было!
-//       . 17 строчка articleCreator ПОЧИНИ!!!!!!
-//       . Сделай статус усмешного изменения профиля
-//       . AVATAR BLYAT!
